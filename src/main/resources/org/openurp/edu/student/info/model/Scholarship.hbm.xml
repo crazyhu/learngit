@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hibernate-mapping xmlns="http://www.hibernate.org/xsd/hibernate-mapping"
+ xsi:schemaLocation="http://www.hibernate.org/xsd/hibernate-mapping classpath://org/hibernate/hibernate-mapping-4.0.xsd" 
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" package="org.openurp.edu.student.info.model"
+  default-access="org.beangle.data.jpa.hibernate.PropertyAccessor">
+  
+    <class name="Scholarship"  >
+        <id name="id" unsaved-value="null" type="long"><generator class="native"/></id>
+        <property name="code" length="30" unique="true" not-null="true"/>
+        <property name="name" length="80"  not-null="true"/>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<profiles>
+  <profile name="student" pattern="org.openurp.edu.student.*.web.action">
+    <url path="/" suffix=""  style="seo" />
+    <interceptors>
+      <interceptor name="web.Interceptor.mysecurity"/>
+      <interceptor name="web.Interceptor.flash"/>
+      <interceptor name="web.Interceptor.hibernate"/>
+    </interceptors>
+  </profile>
+</profiles>

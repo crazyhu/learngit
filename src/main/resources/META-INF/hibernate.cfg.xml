@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>  
+<!DOCTYPE hibernate-configuration PUBLIC  
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"  
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory>
+	    <mapping resource="org/openurp/edu/student/info/model/User.hbm.xml" />
+		<mapping resource="org/openurp/edu/student/info/model/Student.hbm.xml" />
+		<mapping resource="org/openurp/edu/student/info/model/Gender.hbm.xml" />
+		<mapping resource="org/openurp/edu/student/info/model/Stdtype.hbm.xml" />
+		<mapping resource="org/openurp/edu/student/info/model/Checkinstate.hbm.xml" />
+		<mapping resource="org/openurp/edu/student/info/model/Scholarship.hbm.xml" />
+		<mapping resource="org/openurp/edu/student/info/model/Userstate.hbm.xml" />
+		<mapping resource="org/openurp/edu/student/info/model/Stdtypes.hbm.xml" />
+		<mapping resource="org/openurp/edu/student/info/model/Exchange.hbm.xml" />
+		<mapping resource="org/openurp/edu/student/info/model/Schooling.hbm.xml" />
+		<mapping resource="org/openurp/edu/student/info/model/Paystate.hbm.xml" />
+		<mapping resource="org/openurp/edu/student/info/model/Paytype.hbm.xml" />
+	</session-factory>
+</hibernate-configuration>

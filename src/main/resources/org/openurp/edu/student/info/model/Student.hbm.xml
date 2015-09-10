@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hibernate-mapping xmlns="http://www.hibernate.org/xsd/hibernate-mapping"
+	xsi:schemaLocation="http://www.hibernate.org/xsd/hibernate-mapping classpath://org/hibernate/hibernate-mapping-4.0.xsd"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" package="org.openurp.edu.student.info.model"
+	default-access="org.beangle.data.jpa.hibernate.PropertyAccessor">
+
+	<class name="Student">
+		<id name="id" unsaved-value="null" type="long">
+			<generator class="native" />
+		</id>
+		<property name="code" length="30" unique="true" not-null="false" />
+		<property name="name" length="80" not-null="true" />
+		<many-to-one name="gender" />
+		<property name="nationality" length="80" not-null="false"/>
+		<property name="passportNo" length="80" not-null="true" />
+		<property name="birthday" />
+		<property name="major" length="80" not-null="false" />
+		<many-to-one name="scholarship" />
+		<property name="visadate" />
+		<property name="tel" length="80" not-null="false" />
+		<property name="email" length="100" not-null="false" />
+		<property name="address" length="80" not-null="false" />
+		<property name="stdNo" length="80" not-null="false" />
+		<property name="classes" length="80" not-null="false" />
+		<property name="landlord" length="80" not-null="false" />
+		<many-to-one name="stdtype" />
+		<many-to-one name="checkinstate" />
+		<property name="checkinDate" />
+		<property name="latetimes" length="80" not-null="false" />
+		<property name="skiptimes" length="80" not-null="false" />
+		<property name="notes" length="80" not-null="false" />
+
+
+	</class>
+</hibernate-mapping>
